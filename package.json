@@ -1,0 +1,23 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "A note taking application using an Express.js back-end",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dave Quinn",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^27.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qcent/note-taker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Qcent/note-taker/issues"
+  },
+  "homepage": "https://github.com/Qcent/note-taker#readme"
+}
