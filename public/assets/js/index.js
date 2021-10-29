@@ -84,12 +84,17 @@ const handleNoteSave = () => {
             text: noteText.value,
         };
     }
-    console.log(newNote)
-    saveNote(newNote).then(() => {
-        activeNote = newNote;
-        getAndRenderNotes();
-        renderActiveNote();
-    });
+
+    if (newNote.title != '' && newNote.text != '') {
+        saveNote(newNote).then(() => {
+            activeNote = newNote;
+            getAndRenderNotes();
+            renderActiveNote();
+        });
+    } else {
+        if (newNote.title == '') alert("Please enter a Title to this note");
+        else alert("Please enter a Body to this note");
+    }
 };
 
 // Delete the clicked note
