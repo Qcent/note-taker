@@ -1,11 +1,6 @@
 {
   "notes": [
     {
-      "title": "coolieo",
-      "text": "rap sensation",
-      "id": "0"
-    },
-    {
       "title": "testie-0",
       "text": "a brand new notey",
       "id": "1"
@@ -14,6 +9,16 @@
       "title": "testie-1",
       "text": "a brand new notey also",
       "id": "2"
+    },
+    {
+      "title": "testie-3",
+      "text": "a brand new notey also",
+      "id": "3"
+    },
+    {
+      "title": "Date Test",
+      "text": "a brand new notey also",
+      "id": 1635524607012
     }
   ]
 }

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { writeNote, validateNote } = require('../../lib/notes');
+const { addNote, writeNotes, validateNote } = require('../../lib/notes');
 
 const { notes } = require('../../db/db.json');
 
@@ -11,23 +11,27 @@ router.get('/notes', (req, res) => {
 router.post('/notes', (req, res) => {
     // set id based on what the next index of the array will be
     //if an id is not supplied. ie. a new note
-
     if (!validateNote(req.body)) {
         res.status(400).send('The note is not properly formatted.');
     } else {
-        const note = writeNote(req.body, notes);
+        const note = addNote(req.body, notes);
         res.json(note);
     }
 });
 
-/*
-  router.delete('/notes/:id', (req, res) => {
-    const result = findById(req.params.id, notes);
-    if (result) {
-      res.json(result);
+router.delete('/notes/:id', (req, res) => {
+    //find the index of the note with the matching id and store in const index
+    const index = notes.findIndex(el => el.id === req.params.id);
+    if (index > -1) {
+        // remove from notes array
+        notes.splice(index, 1);
+        //update the DB
+        writeNotes(notes);
+        //return success
+        res.status(200).send("Note removed!");
     } else {
-      res.send(404);
+        res.status(404).send(`Invalid note ID ${req.params.id}`);
     }
-  });
-*/
+});
+
 module.exports = router;
