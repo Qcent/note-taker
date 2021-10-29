@@ -22,7 +22,9 @@ Screenshot
 
 ## Installation
 
-This project requires Node.js and npm are installed on the target machine. Once the project files have been downloaded you must run `npm i` or `npm install`. This will install the Express.js library.
+This project requires Node.js and npm are installed on the target machine.  
+Once the project files have been downloaded you must run `npm i` or `npm install`.  
+This will install the Express.js library.
 
 In the `server.js` file you can alter line 3 to set a custom `PORT` to run the server on, or alternatively set the process environment variable `PORT` to the desired port number on your machine.
 ```
