@@ -49,7 +49,9 @@ open http://localhost:3001/
  ![Toolbar](./assets/images/app-screenshot-toolbar.png)
 
 ## Credits
-The front end of this project was designed by Trilogy Education Services with only minor tweaks and a single addition by me. This project is powered by Express.js and a special thanks goes out to the hard working developers that made that project possible. 
+The front end of this project was designed by Trilogy Education Services with only minor tweaks and a single addition by me.  
+This project is powered by Express.js and a special thanks goes out to the hard working developers that made that project possible.  
+I would also like to thank the good people providing the data hosting at Heroku as well as the kind people at GitHub.
 
 ## Questions
 
