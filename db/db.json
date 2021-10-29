@@ -1,7 +1,19 @@
 {
-    "notes": [{
-        "title": "Test Title",
-        "text": "Test text",
-        "id": "0"
-    }]
+  "notes": [
+    {
+      "title": "coolieo",
+      "text": "rap sensation",
+      "id": "0"
+    },
+    {
+      "title": "testie-0",
+      "text": "a brand new notey",
+      "id": "1"
+    },
+    {
+      "title": "testie-1",
+      "text": "a brand new notey also",
+      "id": "2"
+    }
+  ]
 }
