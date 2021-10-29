@@ -47,7 +47,7 @@ open http://localhost:3001/
  Clicking on the `Get Started` button will bring you to the app's main page where you can create, edit and save notes at will.
  ![Main Page](./assets/images/app-screenshot-2.png)
 
- In the top left of the screen is your toolbar. Click the 'Disc' icon to save. Click the 'Pencil' icon to edit.  Click the 'Plus' icon to create a new note.  
+ In the top left of the screen is your toolbar. Click the 'Disc' icon to save. Click the 'Pencil' icon to edit.  Click the 'Plus' icon to create a new note.  Notes can be deleted by clicking the red 'Trash' icon to the right of the note name. 
  ![Toolbar](./assets/images/app-screenshot-toolbar.png)
 
 ## Credits
