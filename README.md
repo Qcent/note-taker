@@ -33,7 +33,7 @@ const PORT = process.env.PORT || <YOUR PORT NUM>;
 
 ## Usage
 
-After installation make sure you are in the project's root directory and run `node start` or `node server.js`. 
+After installation make sure you are in the project's root directory and run `npm start` or `node server.js`. 
 
 Then navigate to the server's ip address on the `PORT` configurable in `server.js` (default 3001). 
 
