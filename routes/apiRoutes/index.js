@@ -4,6 +4,7 @@ const { addNote, writeNotes, validateNote } = require('../../lib/notes');
 const { notes } = require('../../db/db.json');
 
 router.get('/notes', (req, res) => {
+    console.log("Returning Notes")
     console.dir(notes);
     res.json(notes);
 });
@@ -21,14 +22,16 @@ router.post('/notes', (req, res) => {
 
 router.delete('/notes/:id', (req, res) => {
     //find the index of the note with the matching id and store in const index
-    const index = notes.findIndex(el => el.id === req.params.id);
+    const index = notes.findIndex(el => (el.id === req.params.id || parseInt(el.id) === parseInt(req.params.id)));
     if (index > -1) {
         // remove from notes array
-        notes.splice(index, 1);
+        const removed = notes.splice(index, 1);
         //update the DB
         writeNotes(notes);
         //return success
         res.status(200).send("Note removed!");
+        console.log("Note removed:");
+        console.dir(removed);
     } else {
         res.status(404).send(`Invalid note ID ${req.params.id}`);
     }
