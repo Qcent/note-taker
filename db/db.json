@@ -1,19 +1,7 @@
 {
-  "notes": [
-    {
-      "title": "TEsting",
-      "text": "Cool fix",
-      "id": 1635529943092
-    },
-    {
-      "title": "Testing the Edit v2",
-      "text": "Cool fix bro!!\n\nYes it is Amazing!",
-      "id": 1635530031515
-    },
-    {
-      "title": "Console-test",
-      "text": "Perfect",
-      "id": 1635531524930
-    }
-  ]
+    "notes": [{
+        "title": "Example Note",
+        "text": "This is what a note consists of: a title, some text and an id to log it in the database.",
+        "id": 1635529943092
+    }]
 }
